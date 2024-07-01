@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="CGV_DW_01">
+    <property environment="env"/>
+    <property name="IS_CLIENT" value="../../../../../SAG_EAI_1015/common/lib/wm-isclient.jar"/>
+    <property name="IS_SERVER" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/com.softwareag.is.serverjars_10.15.0.0004-0347/wm-isserver.jar"/>
+    <property name="IS_ENTTK" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/com.softwareag.scg.enttoolkit_8.1.20/jars/enttoolkit.jar"/>
+    <property name="IS_MAIL" value="../../../../../SAG_EAI_1015/common/lib/glassfish/gf.jakarta.mail.jar"/>
+    <property name="IS_G11N" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/com.softwareag.g11n_10.15.0.0000-0059.jar"/>
+    <property name="IS_ICU4J" value="../../../../../SAG_EAI_1015/common/lib/ext/icu4j.jar"/>
+    <property name="IS_WSDL4J" value="../../../../../SAG_EAI_1015/common/lib/ext/wsdl4j.jar"/>
+    <property name="IS_JAVAX_XMLSOAP" value="../../../../../SAG_EAI_1015/common/lib/glassfish/gf.webservices-api-osgi.jar"/>
+    <property name="IS_CORE" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/com.softwareag.is.core_10.15.0.0004-0347.jar"/>
+    <property name="IS_EDITOR" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/com.softwareag.is.ui.editor_10.15.0.0004-0347.jar"/>
+    <property name="IS_UIUTILS" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/com.softwareag.is.ui.utils_10.15.0.0004-0347.jar"/>
+    <property name="ECLIPSE_OSGI" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.osgi_3.16.200.v20210226-1447.jar"/>
+    <property name="ECLIPSE_EQUINOX" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.equinox.common_3.14.100.v20210212-1143.jar"/>
+    <property name="ECLIPSE_DRAW2D" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.draw2d_3.10.100.201606061308.jar"/>
+    <property name="ECLIPSE_JFACE" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.jface_3.22.100.v20210126-0831.jar"/>
+    <property name="ECLIPSE_SWT" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.swt.win32.win32.x86_64_3.116.0.v20210302-1107.jar"/>
+    <property name="ECLIPSE_CORECMD" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.core.commands_3.9.800.v20201021-1339.jar"/>
+    <property name="ECLIPSE_CORERUN" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.core.runtime_3.20.100.v20210111-0815.jar"/>
+    <property name="ECLIPSE_UIWB" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.ui.workbench_3.122.100.v20210215-1525.jar"/>
+    <property name="ECLIPSE_PREF" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.equinox.preferences_3.8.200.v20210212-1143.jar"/>
+    <property name="ECLIPSE_JOBS" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.core.jobs_3.10.1100.v20210111-0815.jar"/>
+    <property name="ECLIPSE_EQREG" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.equinox.registry_3.10.100.v20210212-1143.jar"/>
+    <property name="ECLIPSE_E4_UIWB" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.e4.ui.workbench_1.12.100.v20210122-1731.jar"/>
+    <property name="ECLIPSE_E4_UIWB3" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.e4.ui.workbench3_0.15.500.v20201021-1339.jar"/>
+    <property name="ECLIPSE_E4_MWB" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.e4.ui.model.workbench_2.1.1000.v20210111-0958.jar"/>
+    <property name="ECLIPSE_OSGI_SVC" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.osgi.services_3.10.0.v20210212-1137.jar"/>
+    <property name="ECLIPSE_E4_CORE" value="../../../../../SAG_EAI_1015/Designer/eclipse/plugins/org.eclipse.e4.core.di_1.7.700.v20210128-2123.jar"/>
+    <property name="ECLIPSE_HOME" value="../../../../../SAG_EAI_1015/Designer/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="11"/>
+    <property name="source" value="11"/>
+    <path id="CGV_DW_01.classpath">
+        <pathelement location="code/classes"/>
+        <pathelement location="code/jars"/>
+        <pathelement location="lib"/>
+        <pathelement location="${IS_CLIENT}"/>
+        <pathelement location="${IS_SERVER}"/>
+        <pathelement location="${IS_ENTTK}"/>
+        <pathelement location="${IS_MAIL}"/>
+        <pathelement location="${IS_G11N}"/>
+        <pathelement location="${IS_ICU4J}"/>
+        <pathelement location="${IS_WSDL4J}"/>
+        <pathelement location="${IS_JAVAX_XMLSOAP}"/>
+        <pathelement location="${IS_CORE}"/>
+        <pathelement location="${IS_EDITOR}"/>
+        <pathelement location="${IS_UIUTILS}"/>
+        <pathelement location="${ECLIPSE_OSGI}"/>
+        <pathelement location="${ECLIPSE_EQUINOX}"/>
+        <pathelement location="${ECLIPSE_DRAW2D}"/>
+        <pathelement location="${ECLIPSE_JFACE}"/>
+        <pathelement location="${ECLIPSE_SWT}"/>
+        <pathelement location="${ECLIPSE_CORECMD}"/>
+        <pathelement location="${ECLIPSE_CORERUN}"/>
+        <pathelement location="${ECLIPSE_UIWB}"/>
+        <pathelement location="${ECLIPSE_PREF}"/>
+        <pathelement location="${ECLIPSE_JOBS}"/>
+        <pathelement location="${ECLIPSE_EQREG}"/>
+        <pathelement location="${ECLIPSE_E4_UIWB}"/>
+        <pathelement location="${ECLIPSE_E4_UIWB3}"/>
+        <pathelement location="${ECLIPSE_E4_MWB}"/>
+        <pathelement location="${ECLIPSE_OSGI_SVC}"/>
+        <pathelement location="${ECLIPSE_E4_CORE}"/>
+    </path>
+    <target name="init">
+        <mkdir dir="code/classes"/>
+        <copy includeemptydirs="false" todir="code/classes">
+            <fileset dir="code/source">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="code/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="code/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="code/source"/>
+            <classpath refid="CGV_DW_01.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>
